@@ -5,12 +5,13 @@ Demo program for changing passwords. Use old_password = fakePassword to prevent 
 See: https://cloud.docker.com/repository/docker/ammpedro/changepwd
 
 # Pre-requisites:
-1. java 1.8.0_05
-2. jUnit and hamcrest jars (https://github.com/junit-team/junit4/wiki/Download-and-Install)
+1. java 1.8.0_05 installed
+2. jUnit and hamcrest jars downloaded to src folder (https://github.com/junit-team/junit4/wiki/Download-and-Install) 
 
 
 # To run and compile program via cmd
 ```
+cd src
 javac ChangePasswordDemo.java
 jar -cf ChangePasswordDemo.jar ChangePasswordDemo.class
 java ChangePasswordDemo <old_password> <new_password>
@@ -34,6 +35,7 @@ java ChangePasswordDemo password1 VrsXhFPG?7V6ev6HyB</new_password></old_passwor
 
 # To run and compile tests via cmd
 ```
+cd src
 javac -cp junit-4.12.jar:hamcrest-core-1.3.jar:ChangePasswordDemo.jar ChangePasswordDemoTest.java
 java -cp ./:junit-4.12.jar:hamcrest-core-1.3.jar:ChangePasswordDemo.jar org.junit.runner.JUnitCore ChangePasswordDemoTest
 ```
